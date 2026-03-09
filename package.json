@@ -1,0 +1,28 @@
+{
+  "name": "gameshelf",
+  "version": "1.0.0",
+  "description": "**\"Goodreads, but for Games!\"**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushDiyundi/GameShelf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AyushDiyundi/GameShelf/issues"
+  },
+  "homepage": "https://github.com/AyushDiyundi/GameShelf#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}

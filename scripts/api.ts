@@ -1,10 +1,13 @@
+import 'dotenv/config';
+
 // ============================================
 // 🎮 QuestLog - API Module
 // Handles all communication with RAWG API
 // ============================================
 
-// Your RAWG API key - Get yours at https://rawg.io/apidocs
-const API_KEY = "YOUR_API_KEY_HERE";
+// Your RAWG API key - loaded from environment variable
+// Set RAWG_API_KEY in your .env file
+const API_KEY = process.env.RAWG_API_KEY || "";
 const BASE_URL = "https://api.rawg.io/api";
 
 // --------------------------------------------
