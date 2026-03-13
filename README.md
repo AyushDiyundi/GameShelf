@@ -1,220 +1,429 @@
-# 🎮 GameShelf
+# 🎮 GameShelf# 🎮 GameShelf
 
-**"Goodreads, but for Games!"**
 
-A modern multi-page web app where gamers can discover, track, review, and organize their game collections.  
-Built with **HTML**, **CSS**, and **TypeScript**.
 
----
+**"Goodreads, but for Games!"****"Goodreads, but for Games!"**
 
-## 🌐 Pages Overview
 
-| Page | URL | Description |
-|------|-----|-------------|
-| 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
-| 🎮 **My Games** | `mygames.html` | Personal library, wishlist, played games & reviews |
-| ℹ️ **About** | `about.html` | About GameShelf, our mission & team |
-| 📬 **Contact** | `contact.html` | Get in touch, feedback & support |
 
----
+A simple web app where gamers can discover, track, and review their favorite games.  A modern multi-page web app where gamers can discover, track, review, and organize their game collections.  
 
-## 🎯 Features by Page
+Built with **HTML**, **CSS**, and **JavaScript**.Built with **HTML**, **CSS**, and **TypeScript**.
 
-### 🏠 Home (`index.html`)
-- **Hero Section** — Welcome banner with quick search
-- **Trending Games** — Top rated games this week
-- **Browse by Genre** — Action, RPG, Strategy, Adventure, etc.
-- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
-- **Advanced Filters** — Filter by rating, release year, sort options
+
+
+------
+
+
+
+## 🌐 Pages## 🌐 Pages Overview
+
+
+
+| Page | File | Description || Page | URL | Description |
+
+|------|------|-------------||------|-----|-------------|
+
+| 🏠 **Home** | `index.html` | Browse games, search & filter || 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
+
+| 🎮 **My Games** | `mygames.html` | Your saved games & reviews || 🎮 **My Games** | `mygames.html` | Personal library, wishlist, played games & reviews |
+
+| ℹ️ **About** | `about.html` | About the project || ℹ️ **About** | `about.html` | About GameShelf, our mission & team |
+
+| 📬 **Contact** | `contact.html` | Contact us || 📬 **Contact** | `contact.html` | Get in touch, feedback & support |
+
+
+
+------
+
+
+
+## ✨ Features## 🎯 Features by Page
+
+
+
+- 🔍 **Search** — Find games from RAWG API### 🏠 Home (`index.html`)
+
+- 🎯 **Filter** — Filter by genre- **Hero Section** — Welcome banner with quick search
+
+- ⭐ **Ratings** — Rate games 1-5 stars- **Trending Games** — Top rated games this week
+
+- 📝 **Reviews** — Write reviews for games- **Browse by Genre** — Action, RPG, Strategy, Adventure, etc.
+
+- 💾 **Save Games** — Add games to your library- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
+
+- 📱 **Responsive** — Works on mobile & desktop- **Advanced Filters** — Filter by rating, release year, sort options
+
 - **Search** — Find any game from 500,000+ titles
-- **Game Cards** — Preview with ratings, genres & quick add to library
+
+---- **Game Cards** — Preview with ratings, genres & quick add to library
+
 - **Pagination** — Navigate through results
-- **Featured Collections** — Curated game lists
 
-### 🎮 My Games (`mygames.html`)
-- **Dashboard Stats** — Total games, completed, hours played, reviews count
-- **Game Library** — All games you've added
-- **Status Tracking** — Playing / Completed / Dropped / Backlog
-- **Wishlist** — Games you want to play
-- **Star Ratings** — Rate games 1-5 stars
-- **Your Reviews** — Personal written reviews
-- **Filter Tabs** — View by status category
-- **Grid/List View** — Toggle display mode
-- **Import/Export** — Backup your collection
+## 📂 Project Structure (Simplified)- **Featured Collections** — Curated game lists
 
-### ℹ️ About (`about.html`)
+
+
+```### 🎮 My Games (`mygames.html`)
+
+GameShelf/- **Dashboard Stats** — Total games, completed, hours played, reviews count
+
+├── index.html          ← Home page- **Game Library** — All games you've added
+
+├── mygames.html        ← My Games page- **Status Tracking** — Playing / Completed / Dropped / Backlog
+
+├── about.html          ← About page- **Wishlist** — Games you want to play
+
+├── contact.html        ← Contact page- **Star Ratings** — Rate games 1-5 stars
+
+├── styles.css          ← ALL styles (single file)- **Your Reviews** — Personal written reviews
+
+├── app.js              ← ALL JavaScript (single file)- **Filter Tabs** — View by status category
+
+└── README.md           ← This file- **Grid/List View** — Toggle display mode
+
+```- **Import/Export** — Backup your collection
+
+
+
+---### ℹ️ About (`about.html`)
+
 - **Our Mission** — Why we built GameShelf
-- **Features Overview** — What makes us different
+
+## 🛠️ Tech Stack- **Features Overview** — What makes us different
+
 - **How It Works** — Simple 3-step guide
-- **Tech Stack** — Technologies powering the app
-- **Team Section** — Meet the creators
-- **Statistics** — Platform numbers & achievements
-- **FAQ** — Frequently asked questions
 
-### 📬 Contact (`contact.html`)
-- **Contact Form** — Name, email, subject, message
-- **Email Support** — Direct email link
-- **Social Links** — GitHub, Twitter, Discord
+| Technology | Purpose |- **Tech Stack** — Technologies powering the app
+
+|------------|---------|- **Team Section** — Meet the creators
+
+| HTML5 | Page structure |- **Statistics** — Platform numbers & achievements
+
+| CSS3 | Styling |- **FAQ** — Frequently asked questions
+
+| JavaScript | Interactivity |
+
+| RAWG API | Game data |### 📬 Contact (`contact.html`)
+
+| localStorage | Save user data |- **Email Link** — Opens user's email client to send message
+
+- **Contact Email** — Ayubackup07@gmail.com
+
+---- **Social Links** — GitHub, Twitter, Discord
+
 - **FAQ Link** — Common questions
-- **Response Time** — Expected reply timeframe
-- **Bug Reports** — How to report issues
-- **Feature Requests** — Suggest new features
-- **Office Location** — Physical address (if applicable)
 
----
+## 👥 Team & Task Division- **Response Time** — Expected reply timeframe
 
-## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Page structure & semantics |
-| **CSS3** | Styling, animations & responsive design |
-| **TypeScript** | Interactivity & API communication |
-| **RAWG API** | Game data (500,000+ games) |
-| **localStorage** | Persist user data locally |
 
----
+### 👤 Person A — Designer (HTML & CSS)---
 
-## 📂 Project Structure
 
-```
-GameShelf/
-├── index.html              ← Home (discover & explore games)
-├── mygames.html            ← My Games (library & reviews)
-├── about.html              ← About (mission & team)
+
+**Creates all 4 HTML pages and the single CSS file.**## 🛠️ Tech Stack
+
+
+
+| Task | File | Description || Technology | Purpose |
+
+|------|------|-------------||------------|---------|
+
+| 1 | `index.html` | Home page structure (search bar, filter dropdown, game cards container) || **HTML5** | Page structure & semantics |
+
+| 2 | `mygames.html` | My Games page (stats, library cards, reviews section) || **CSS3** | Styling, animations & responsive design |
+
+| 3 | `about.html` | About page (mission, features, team info) || **TypeScript** | Interactivity & API communication |
+
+| 4 | `contact.html` | Contact page (email link, social links) || **RAWG API** | Game data (500,000+ games) |
+
+| 5 | `styles.css` | All CSS styling for all pages || **localStorage** | Persist user data locally |
+
+
+
+**HTML Elements Person A Creates:**---
+
+
+
+```html## 📂 Project Structure
+
+<!-- index.html needs: -->
+
+- Navigation bar (links to all pages)```
+
+- Search input (#searchInput)GameShelf/
+
+- Genre filter dropdown (#genreFilter)├── index.html              ← Home (discover & explore games)
+
+- Games container (#gamesContainer)├── mygames.html            ← My Games (library & reviews)
+
+- Loading indicator (#loading)├── about.html              ← About (mission & team)
+
 ├── contact.html            ← Contact (support & feedback)
-├── styles/
-│   ├── main.css            ← Global styles & variables
-│   ├── components.css      ← Cards, buttons, modals, badges
-│   ├── layout.css          ← Grid, flexbox & responsive
-│   ├── home.css            ← Home page specific styles
+
+<!-- mygames.html needs: -->├── styles/
+
+- Navigation bar│   ├── main.css            ← Global styles & variables
+
+- Stats section (total, playing, completed, reviews)│   ├── components.css      ← Cards, buttons, modals, badges
+
+- Library container (#libraryContainer)│   ├── layout.css          ← Grid, flexbox & responsive
+
+- Reviews container (#reviewsContainer)│   ├── home.css            ← Home page specific styles
+
 │   ├── mygames.css         ← My Games specific styles
-│   ├── about.css           ← About page specific styles
-│   └── contact.css         ← Contact page specific styles
-├── scripts/
-│   ├── api.ts              ← RAWG API communication
-│   ├── storage.ts          ← localStorage logic
+
+<!-- about.html needs: -->│   ├── about.css           ← About page specific styles
+
+- Navigation bar│   └── contact.css         ← Contact page specific styles
+
+- Mission section├── scripts/
+
+- Features list│   ├── api.ts              ← RAWG API communication
+
+- Team section│   ├── storage.ts          ← localStorage logic
+
 │   ├── app.ts              ← Shared app logic & navigation
-│   ├── home.ts             ← Home page functionality
-│   ├── mygames.ts          ← My Games functionality
-│   └── contact.ts          ← Contact form handling
-├── assets/
-│   └── images/             ← Icons, logos & images
-├── .env                    ← API key (not committed)
+
+<!-- contact.html needs: -->│   ├── home.ts             ← Home page functionality
+
+- Navigation bar│   └── mygames.ts          ← My Games functionality
+
+- Email link (mailto:Ayubackup07@gmail.com)├── assets/
+
+- Social links│   └── images/             ← Icons, logos & images
+
+```├── .env                    ← API key (not committed)
+
 ├── .gitignore              ← Ignored files
-└── package.json            ← Dependencies
+
+---└── package.json            ← Dependencies
+
 ```
 
+### 👤 Person B — Developer (JavaScript)
+
 ---
+
+**Creates the single JavaScript file with all functionality.**
 
 ## 🚀 Getting Started
 
-### Prerequisites
+| Task | Function | Description |
 
-- [Node.js](https://nodejs.org/) (v16+)
-- [VS Code](https://code.visualstudio.com/)
-- [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- Free [RAWG API Key](https://rawg.io/apidocs)
+|------|----------|-------------|### Prerequisites
 
-### Installation
+| 1 | `searchGames()` | Fetch games from RAWG API |
+
+| 2 | `displayGames()` | Show game cards on home page |- [Node.js](https://nodejs.org/) (v16+)
+
+| 3 | `filterByGenre()` | Filter games by selected genre |- [VS Code](https://code.visualstudio.com/)
+
+| 4 | `saveGame()` | Save a game to localStorage |- [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+| 5 | `loadLibrary()` | Load saved games on My Games page |- Free [RAWG API Key](https://rawg.io/apidocs)
+
+| 6 | `rateGame()` | Add/update star rating |
+
+| 7 | `saveReview()` | Save a text review |### Installation
+
+| 8 | `displayReviews()` | Show all reviews |
 
 1. **Clone the repository**
-   ```bash
+
+---   ```bash
+
    git clone https://github.com/AyushDiyundi/GameShelf.git
-   cd GameShelf
+
+## 📅 Simple Timeline (7 Days)   cd GameShelf
+
    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+| Day | Person A (Designer) | Person B (Developer) |
 
-3. **Configure API Key**
-   
-   Create a `.env` file in the root directory:
+|-----|---------------------|----------------------|2. **Install dependencies**
+
+| 1 | Create `index.html` structure | Set up `app.js`, API functions |   ```bash
+
+| 2 | Create `mygames.html` structure | `searchGames()`, `displayGames()` |   npm install
+
+| 3 | Create `about.html` & `contact.html` | `filterByGenre()`, `saveGame()` |   ```
+
+| 4 | Start `styles.css` - layout & colors | `loadLibrary()`, `rateGame()` |
+
+| 5 | `styles.css` - cards & buttons | `saveReview()`, `displayReviews()` |3. **Configure API Key**
+
+| 6 | `styles.css` - responsive design | Testing & bug fixes |   
+
+| 7 | Final polish & testing | Final polish & testing |   Create a `.env` file in the root directory:
+
    ```env
-   RAWG_API_KEY=your_api_key_here
+
+---   RAWG_API_KEY=your_api_key_here
+
    ```
+
+## 🚀 Getting Started
 
 4. **Run the app**
-   
-   Open `index.html` with Live Server in VS Code
 
----
+1. **Clone the repo**   
+
+   ```bash   Open `index.html` with Live Server in VS Code
+
+   git clone https://github.com/AyushDiyundi/GameShelf.git
+
+   cd GameShelf---
+
+   ```
 
 ## 📋 Page Specifications
 
-### 🏠 Home Layout
+2. **Open in browser**
+
+   - Open `index.html` with Live Server (VS Code)### 🏠 Home Layout
+
+   - Or just double-click `index.html`
 
 ```
-┌─────────────────────────────────────────────────────┐
-│  🎮 GameShelf    [Search...]    🏠 📚 ℹ️ 📬        │
-├─────────────────────────────────────────────────────┤
+
+3. **API Key**┌─────────────────────────────────────────────────────┐
+
+   - The RAWG API key is already in `app.js`│  🎮 GameShelf    [Search...]    🏠 📚 ℹ️ 📬        │
+
+   - Free API: https://rawg.io/apidocs├─────────────────────────────────────────────────────┤
+
 │                                                     │
-│  ┌─────────────────────────────────────────────┐   │
+
+---│  ┌─────────────────────────────────────────────┐   │
+
 │  │     Welcome to GameShelf                     │   │
-│  │     Discover your next favorite game         │   │
+
+## 📝 How It Works│  │     Discover your next favorite game         │   │
+
 │  │     [    Search games...    ] [🔍]          │   │
-│  └─────────────────────────────────────────────┘   │
-│                                                     │
-│  � Filters                                         │
-│  ┌─────────────────────────────────────────────┐   │
-│  │ Genre: [All▼] Platform: [All▼] Rating: [▼] │   │
+
+### Home Page Flow:│  └─────────────────────────────────────────────┘   │
+
+1. User types in search box → `searchGames()` calls API│                                                     │
+
+2. Results returned → `displayGames()` creates cards│  � Filters                                         │
+
+3. User clicks genre filter → `filterByGenre()` updates results│  ┌─────────────────────────────────────────────┐   │
+
+4. User clicks "Add" on a card → `saveGame()` stores in localStorage│  │ Genre: [All▼] Platform: [All▼] Rating: [▼] │   │
+
 │  │ Year: [All▼]  Sort: [Popularity▼] [Apply]  │   │
-│  └─────────────────────────────────────────────┘   │
-│                                                     │
-│  🔥 Trending This Week                              │
-│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     │
-│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
+
+### My Games Page Flow:│  └─────────────────────────────────────────────┘   │
+
+1. Page loads → `loadLibrary()` reads from localStorage│                                                     │
+
+2. User clicks stars → `rateGame()` updates rating│  🔥 Trending This Week                              │
+
+3. User writes review → `saveReview()` stores review│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     │
+
+4. Reviews displayed → `displayReviews()` shows all│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
+
 │  │ +Add │ │ +Add │ │ +Add │ │ +Add │ │ +Add │     │
-│  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘     │
+
+---│  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘     │
+
 │                                                     │
-│  🎮 Browse All Games                                │
+
+## 🎨 CSS Classes to Style (For Person A)│  🎮 Browse All Games                                │
+
 │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     │
-│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
+
+```css│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
+
+/* Layout */│  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘     │
+
+.navbar { }│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     │
+
+.container { }│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
+
 │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘     │
-│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     │
-│  │ Game │ │ Game │ │ Game │ │ Game │ │ Game │     │
-│  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘     │
-│                                                     │
-│  [← Prev]  Page 1 of 50  [Next →]                  │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
+
+/* Cards */│                                                     │
+
+.game-card { }│  [← Prev]  Page 1 of 50  [Next →]                  │
+
+.game-card img { }│                                                     │
+
+.game-card h3 { }└─────────────────────────────────────────────────────┘
+
+.game-card .rating { }```
+
+.game-card .btn { }
 
 ### 🎮 My Games Layout
 
-```
-┌─────────────────────────────────────────────────────┐
+/* Forms */
+
+.search-box { }```
+
+.filter-dropdown { }┌─────────────────────────────────────────────────────┐
+
 │  🎮 GameShelf    [Search...]    🏠 📚 ℹ️ �        │
-├─────────────────────────────────────────────────────┤
-│                                                     │
-│  📊 Your Stats                                      │
-│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐       │
-│  │ 47     │ │ 23     │ │ 156h   │ │ 12     │       │
+
+/* My Games */├─────────────────────────────────────────────────────┤
+
+.stats-container { }│                                                     │
+
+.stat-box { }│  📊 Your Stats                                      │
+
+.library-grid { }│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐       │
+
+.review-card { }│  │ 47     │ │ 23     │ │ 156h   │ │ 12     │       │
+
 │  │ Total  │ │ Done   │ │ Played │ │ Reviews│       │
-│  └────────┘ └────────┘ └────────┘ └────────┘       │
+
+/* Stars */│  └────────┘ └────────┘ └────────┘ └────────┘       │
+
+.star { }│                                                     │
+
+.star.active { }│  [All] [Playing] [Completed] [Wishlist] [Dropped]  │
+
 │                                                     │
-│  [All] [Playing] [Completed] [Wishlist] [Dropped]  │
-│                                                     │
-│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐              │
-│  │ Game │ │ Game │ │ Game │ │ Game │              │
-│  │ ⭐⭐⭐│ │ ⭐⭐⭐│ │ ⭐⭐  │ │ ⭐⭐⭐│              │
-│  └──────┘ └──────┘ └──────┘ └──────┘              │
-│                                                     │
+
+/* Buttons */│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐              │
+
+.btn { }│  │ Game │ │ Game │ │ Game │ │ Game │              │
+
+.btn-primary { }│  │ ⭐⭐⭐│ │ ⭐⭐⭐│ │ ⭐⭐  │ │ ⭐⭐⭐│              │
+
+.btn-danger { }│  └──────┘ └──────┘ └──────┘ └──────┘              │
+
+```│                                                     │
+
 │  ✍️ Your Reviews                                    │
-│  ┌─────────────────────────────────────────────┐   │
+
+---│  ┌─────────────────────────────────────────────┐   │
+
 │  │ Game Name          ⭐⭐⭐⭐☆    Mar 9, 2026  │   │
-│  │ "Amazing game with great story..."          │   │
+
+## 📧 Contact│  │ "Amazing game with great story..."          │   │
+
 │  └─────────────────────────────────────────────┘   │
-│                                                     │
-└─────────────────────────────────────────────────────┘
+
+- **Email:** Ayubackup07@gmail.com│                                                     │
+
+- **GitHub:** [AyushDiyundi](https://github.com/AyushDiyundi)└─────────────────────────────────────────────────────┘
+
 ```
+
+---
 
 ### ℹ️ About Layout
 
+## 📄 License
+
 ```
-┌─────────────────────────────────────────────────────┐
+
+This project is for educational purposes.┌─────────────────────────────────────────────────────┐
+
 │  🎮 GameShelf    [Search...]    🏠 📚 ℹ️ �        │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
@@ -266,24 +475,27 @@ GameShelf/
 │  │     We'd love to hear from you!              │   │
 │  └─────────────────────────────────────────────┘   │
 │                                                     │
-│  ┌─────────────────┐  ┌─────────────────────┐      │
-│  │                 │  │ 📧 Email Us          │      │
-│  │  Contact Form   │  │ support@gameshelf   │      │
-│  │                 │  │                     │      │
-│  │  Name: [____]   │  │ 🐦 Twitter          │      │
-│  │  Email: [____]  │  │ @GameShelfApp       │      │
-│  │  Subject: [__]  │  │                     │      │
-│  │  Message:       │  │ 💬 Discord          │      │
-│  │  [___________]  │  │ discord.gg/gameshelf│      │
-│  │  [___________]  │  │                     │      │
-│  │  [___________]  │  │ 🐙 GitHub           │      │
-│  │                 │  │ github.com/GameShelf│      │
-│  │  [Send Message] │  │                     │      │
-│  │                 │  └─────────────────────┘      │
-│  └─────────────────┘                               │
+│  ┌─────────────────────────────────────────────┐   │
+│  │                                             │   │
+│  │  📧 Email Us                                │   │
+│  │  ┌───────────────────────────────────────┐ │   │
+│  │  │  Ayubackup07@gmail.com                │ │   │
+│  │  │  [Click to Send Email]                │ │   │
+│  │  └───────────────────────────────────────┘ │   │
+│  │                                             │   │
+│  │  🔗 Connect With Us                         │   │
+│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐       │   │
+│  │  │ 🐙      │ │ 🐦      │ │ 💬      │       │   │
+│  │  │ GitHub  │ │ Twitter │ │ Discord │       │   │
+│  │  └─────────┘ └─────────┘ └─────────┘       │   │
+│  │                                             │   │
+│  └─────────────────────────────────────────────┘   │
 │                                                     │
 │  ⏰ Response Time: We typically respond within     │
-│     24-48 hours on business days.                  │
+│     24-48 hours.                                   │
+│                                                     │
+│  ❓ Check our FAQ on the About page for quick     │
+│     answers to common questions!                   │
 │                                                     │
 └─────────────────────────────────────────────────────┘
 ```
@@ -319,7 +531,200 @@ GameShelf/
 
 ---
 
-## 📡 API Reference
+## � Team Roles
+
+### 🎨 Person A: The Designer (UI/UX Focus)
+
+**Your Mission:** Make the app look stunning and feel intuitive!
+
+**Your Pages:**
+- `index.html` (Home page structure)
+- `about.html` (About page)
+- `contact.html` (Contact page)
+- All files in `styles/` folder
+
+**Your Responsibilities:**
+| Task | Files |
+|------|-------|
+| Page layouts & HTML structure | `.html` files |
+| Global styles & variables | `styles/main.css` |
+| Component styling | `styles/components.css` |
+| Responsive grid system | `styles/layout.css` |
+| Page-specific styles | `styles/home.css`, `styles/about.css`, etc. |
+| Animations & transitions | All CSS files |
+| Color scheme & typography | `styles/main.css` |
+
+**Key Skills to Learn:**
+- HTML5 semantic elements
+- CSS Flexbox & Grid
+- CSS Variables
+- Responsive Design (mobile-first)
+- CSS Animations & Transitions
+- Accessibility basics
+
+---
+
+### ⚙️ Person B: The Developer (Logic Focus)
+
+**Your Mission:** Make the app functional and interactive!
+
+**Your Pages:**
+- `mygames.html` (My Games page structure)
+- All files in `scripts/` folder
+
+**Your Responsibilities:**
+| Task | Files |
+|------|-------|
+| API integration | `scripts/api.ts` |
+| Data persistence | `scripts/storage.ts` |
+| Shared app logic | `scripts/app.ts` |
+| Home page functionality | `scripts/home.ts` |
+| My Games functionality | `scripts/mygames.ts` |
+| Event listeners & DOM | All TypeScript files |
+
+**Key Skills to Learn:**
+- TypeScript basics
+- Fetch API & async/await
+- localStorage API
+- DOM manipulation
+- Event handling
+- Error handling
+
+---
+
+## 📅 7-Day Sprint Roadmap
+
+### Day 1: Setup & Foundation
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| ✏️ Draw wireframes for all 4 pages | 🔧 Set up project structure |
+| 📄 Create HTML skeletons | 🔑 Get RAWG API key |
+| 🎨 Define color palette & fonts | 📡 Test first API call |
+| 🧭 Build navigation component | 💾 Set up localStorage schema |
+
+**🎯 Milestone:** Project structure ready, API returns data in console!
+
+---
+
+### Day 2: Home Page - Structure & Data
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| 🏠 Build Home page HTML | 🔄 Create API functions |
+| 🎯 Add filter dropdowns HTML | 📝 Fetch trending games |
+| 🃏 Create game card HTML template | 🔍 Implement search logic |
+| 📱 Start mobile-first CSS | 🎯 Build filter functionality |
+
+**🎯 Milestone:** Home page shows real game data!
+
+---
+
+### Day 3: Home Page - Polish & Interactivity
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| ✨ Style game cards beautifully | 📄 Add pagination logic |
+| 🎨 Add hover effects & animations | ➕ "Add to Library" functionality |
+| 📱 Complete responsive design | 🪟 Build game detail modal |
+| 🔄 Loading state animations | ⚡ Optimize API calls |
+
+**🎯 Milestone:** Fully functional Home page with filters!
+
+---
+
+### Day 4: My Games Page
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| 📚 Build My Games HTML | 💾 Implement storage functions |
+| 📊 Design stats dashboard | 📂 Load/save library games |
+| 🏷️ Style status badges | ⭐ Rating system logic |
+| 🔘 Create filter tabs | ✍️ Review CRUD operations |
+
+**🎯 Milestone:** Users can manage their game library!
+
+---
+
+### Day 5: My Games Polish + About Page
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| ⭐ Style star rating component | 🔄 Status update functionality |
+| ✍️ Design review cards | 🗑️ Delete game/review logic |
+| ℹ️ Build About page HTML | 📊 Calculate & display stats |
+| 🎨 Style About page sections | 🔍 Library search/filter |
+
+**🎯 Milestone:** My Games complete, About page styled!
+
+---
+
+### Day 6: Contact Page + Integration
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| 📬 Build Contact page HTML | � Connect all pages together |
+| � Style email link button | � Bug fixes & edge cases |
+| 🔗 Add social media links | � Test localStorage functions |
+| 🎨 Polish all page styles | ⚡ Optimize API calls |
+
+**🎯 Milestone:** All 4 pages functional and connected!
+
+---
+
+### Day 7: Testing & Deployment 🚀
+
+| 🎨 Person A (Designer) | ⚙️ Person B (Developer) |
+|------------------------|-------------------------|
+| 📱 Test on mobile devices | 🐛 Final bug fixes |
+| ✨ Final visual polish | ⚡ Performance optimization |
+| 📸 Take screenshots for README | 🚀 Deploy to GitHub Pages/Netlify |
+| 📝 Update README with images | 📝 Document any setup steps |
+
+**🎯 Milestone:** 🎉 LIVE WEBSITE LAUNCHED!
+
+---
+
+## 💡 Collaboration Tips
+
+### Daily Workflow
+
+1. **Morning Sync** — 10 min call to discuss today's tasks
+2. **Work Session** — Focus on your responsibilities
+3. **Mid-day Check** — Quick sync if integration needed
+4. **Evening Commit** — Both push code to GitHub
+
+### Git Workflow
+
+```bash
+# Start of day - get latest changes
+git pull origin master
+
+# Work on your files...
+
+# End of day - commit and push
+git add .
+git commit -m "Day X: Brief description of changes"
+git push origin master
+```
+
+### Communication Rules
+
+- 🟢 **Green Light** — "I'm done, you can use my code"
+- 🟡 **Yellow Light** — "Working on it, don't touch yet"
+- 🔴 **Red Light** — "I'm stuck, need help"
+
+### File Ownership
+
+| Person A Owns | Person B Owns | Shared |
+|---------------|---------------|--------|
+| `*.html` (structure) | `scripts/*.ts` | `README.md` |
+| `styles/*.css` | `package.json` | `.gitignore` |
+| `assets/` | `.env` | Testing |
+
+---
+
+## �📡 API Reference
 
 ### RAWG API Endpoints Used
 
@@ -425,11 +830,10 @@ interface UserSettings {
   - [ ] Tech stack info
   
 - [ ] **Contact**
-  - [ ] Contact form
-  - [ ] Form validation
+  - [ ] Email link (mailto: Ayubackup07@gmail.com)
   - [ ] Social media links
-  - [ ] Email link
   - [ ] Response time info
+  - [ ] FAQ reference
 
 - [ ] **Global**
   - [ ] Responsive navigation
