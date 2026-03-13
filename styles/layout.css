@@ -58,34 +58,6 @@ nav a:hover {
 	gap: var(--space-sm);
 }
 
-/* Filters */
-.filters form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-    align-items: center;
-}
-
-.filters select,
-.filters button {
-    flex: 0 0 auto;
-}
-
-/* Filter Tabs */
-.filter-tabs {
-	display: flex;
-	gap: var(--space-sm);
-	flex-wrap: wrap;
-}
-
-/* Pagination */
-.pagination {
-	display: flex;
-	justify-content: center;
-	gap: var(--space-sm);
-	padding: var(--space-md) 0;
-	align-items: center;
-}
 
 /* Contact Layout */
 .contact-container {

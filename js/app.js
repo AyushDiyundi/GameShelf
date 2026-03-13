@@ -206,6 +206,15 @@ async function loadGames() {
     showLoading(false);
 }
 
+async function handleSearch(query, gamesContainer) {
+    const cleanedQuery = query.trim();
+
+    showLoading(true);
+    const games = cleanedQuery ? await searchGames(cleanedQuery) : await getPopularGames();
+    displayGames(games, gamesContainer);
+    showLoading(false);
+}
+
 // --- INITIALIZATION ---
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -214,22 +223,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // --- HOME PAGE ---
     const gamesContainer = document.getElementById("gamesContainer");
     const searchInput = document.getElementById("searchInput");
+    const searchForm = document.getElementById("searchForm");
     const genreFilter = document.getElementById("genreFilter");
     
     if (gamesContainer) {
         loadGames();
         
-        if (searchInput) {
-            searchInput.addEventListener("keyup", async function(e) {
-                if (e.key === "Enter") {
-                    const query = searchInput.value.trim();
-                    if (query) {
-                        showLoading(true);
-                        const games = await searchGames(query);
-                        displayGames(games, gamesContainer);
-                        showLoading(false);
-                    }
-                }
+        // Prevent form from refreshing page
+        if (searchForm) {
+            searchForm.addEventListener("submit", async function(e) {
+                e.preventDefault();
+                const query = searchInput ? searchInput.value : "";
+                await handleSearch(query, gamesContainer);
             });
         }
         

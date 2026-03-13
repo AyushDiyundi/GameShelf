@@ -5,6 +5,29 @@
 const LIBRARY_KEY = "gameshelf_library";
 const REVIEWS_KEY = "gameshelf_reviews";
 
+function refreshMyGamesPage() {
+    const libraryContainer = document.getElementById("libraryContainer");
+    const reviewsContainer = document.getElementById("reviewsContainer");
+
+    if (libraryContainer) {
+        displayLibrary(libraryContainer);
+    }
+
+    if (reviewsContainer) {
+        displayReviews(reviewsContainer);
+    }
+
+    if (libraryContainer || reviewsContainer) {
+        updateStats();
+    }
+}
+
+function reloadIfHomePage() {
+    if (document.getElementById("gamesContainer")) {
+        location.reload();
+    }
+}
+
 // --- LIBRARY FUNCTIONS ---
 
 // Get library from localStorage
@@ -46,10 +69,7 @@ function saveGame(id, name, image) {
     saveLibrary(library);
     alert(`${name} added to library! 🎮`);
     
-    // Refresh display if on home page
-    if (document.getElementById("gamesContainer")) {
-        location.reload();
-    }
+    reloadIfHomePage();
 }
 
 // Remove a game from library
@@ -76,12 +96,7 @@ function rateGame(gameId, rating) {
         game.rating = rating;
         saveLibrary(library);
         
-        // Refresh library display
-        const container = document.getElementById("libraryContainer");
-        if (container) {
-            displayLibrary(container);
-            updateStats();
-        }
+        refreshMyGamesPage();
     }
 }
 
@@ -116,12 +131,7 @@ function saveReview(gameId, gameName, rating, text) {
     
     saveReviewsData(filtered);
     
-    // Refresh reviews display
-    const container = document.getElementById("reviewsContainer");
-    if (container) {
-        displayReviews(container);
-        updateStats();
-    }
+    refreshMyGamesPage();
     
     alert("Review saved! 📝");
 }
@@ -132,10 +142,5 @@ function deleteReview(gameId) {
     reviews = reviews.filter(r => r.gameId !== gameId);
     saveReviewsData(reviews);
     
-    // Refresh reviews display
-    const container = document.getElementById("reviewsContainer");
-    if (container) {
-        displayReviews(container);
-        updateStats();
-    }
+    refreshMyGamesPage();
 }
