@@ -199,20 +199,39 @@ function showLoading(show) {
 async function loadGames() {
     const gamesContainer = document.getElementById("gamesContainer");
     if (!gamesContainer) return;
-    
+
+    await applyHomeFilters(gamesContainer);
+}
+
+async function applyHomeFilters(gamesContainer) {
+    const searchInput = document.getElementById("searchInput");
+    const genreFilter = document.getElementById("genreFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const ratingFilter = document.getElementById("ratingFilter");
+
+    const filters = {
+        search: searchInput ? searchInput.value.trim() : "",
+        genre: genreFilter ? genreFilter.value : "",
+        year: yearFilter ? yearFilter.value : "",
+        minRating: ratingFilter ? Number(ratingFilter.value) : 0
+    };
+
     showLoading(true);
-    const games = await getPopularGames();
+    const games = await filterGames(filters);
     displayGames(games, gamesContainer);
     showLoading(false);
 }
 
-async function handleSearch(query, gamesContainer) {
-    const cleanedQuery = query.trim();
+function resetHomeFilters() {
+    const searchInput = document.getElementById("searchInput");
+    const genreFilter = document.getElementById("genreFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const ratingFilter = document.getElementById("ratingFilter");
 
-    showLoading(true);
-    const games = cleanedQuery ? await searchGames(cleanedQuery) : await getPopularGames();
-    displayGames(games, gamesContainer);
-    showLoading(false);
+    if (searchInput) searchInput.value = "";
+    if (genreFilter) genreFilter.value = "";
+    if (yearFilter) yearFilter.value = "";
+    if (ratingFilter) ratingFilter.value = "0";
 }
 
 // --- INITIALIZATION ---
@@ -225,6 +244,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById("searchInput");
     const searchForm = document.getElementById("searchForm");
     const genreFilter = document.getElementById("genreFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const ratingFilter = document.getElementById("ratingFilter");
+    const resetFiltersBtn = document.getElementById("resetFiltersBtn");
     
     if (gamesContainer) {
         loadGames();
@@ -233,18 +255,31 @@ document.addEventListener("DOMContentLoaded", function() {
         if (searchForm) {
             searchForm.addEventListener("submit", async function(e) {
                 e.preventDefault();
-                const query = searchInput ? searchInput.value : "";
-                await handleSearch(query, gamesContainer);
+                await applyHomeFilters(gamesContainer);
             });
         }
-        
-        if (genreFilter) {
-            genreFilter.addEventListener("change", async function() {
-                const genre = genreFilter.value;
-                showLoading(true);
-                const games = await filterByGenre(genre);
-                displayGames(games, gamesContainer);
-                showLoading(false);
+
+        [genreFilter, yearFilter, ratingFilter].forEach(filter => {
+            if (filter) {
+                filter.addEventListener("change", async function() {
+                    await applyHomeFilters(gamesContainer);
+                });
+            }
+        });
+
+        if (resetFiltersBtn) {
+            resetFiltersBtn.addEventListener("click", async function() {
+                resetHomeFilters();
+                await applyHomeFilters(gamesContainer);
+            });
+        }
+
+        // Optional: run search as user clears input
+        if (searchInput) {
+            searchInput.addEventListener("input", async function() {
+                if (searchInput.value.trim() === "") {
+                    await applyHomeFilters(gamesContainer);
+                }
             });
         }
     }
