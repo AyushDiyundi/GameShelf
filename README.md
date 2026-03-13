@@ -1,154 +1,305 @@
-# 🎮 GameShelf# 🎮 GameShelf
+# 🎮 GameShelf# 🎮 GameShelf# 🎮 GameShelf
 
 
 
-**"Goodreads, but for Games!"****"Goodreads, but for Games!"**
+**"Goodreads, but for Games!"**
 
 
+
+A simple web app where gamers can discover, track, and review their favorite games.  **"Goodreads, but for Games!"****"Goodreads, but for Games!"**
+
+Built with **HTML**, **CSS**, and **JavaScript**.
+
+
+
+---
 
 A simple web app where gamers can discover, track, and review their favorite games.  A modern multi-page web app where gamers can discover, track, review, and organize their game collections.  
 
+## 🌐 Pages
+
 Built with **HTML**, **CSS**, and **JavaScript**.Built with **HTML**, **CSS**, and **TypeScript**.
 
+| Page | File | Description |
+
+|------|------|-------------|
+
+| 🏠 **Home** | `index.html` | Browse games, search & filter |
+
+| 🎮 **My Games** | `mygames.html` | Your saved games & reviews |------
+
+| ℹ️ **About** | `about.html` | About the project |
+
+| 📬 **Contact** | `contact.html` | Contact us |
 
 
-------
+
+---## 🌐 Pages## 🌐 Pages Overview
 
 
 
-## 🌐 Pages## 🌐 Pages Overview
+## ✨ Features
 
 
 
-| Page | File | Description || Page | URL | Description |
+- 🔍 **Search** — Find games from RAWG API| Page | File | Description || Page | URL | Description |
 
-|------|------|-------------||------|-----|-------------|
+- 🎯 **Filter** — Filter by genre
 
-| 🏠 **Home** | `index.html` | Browse games, search & filter || 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
+- ⭐ **Ratings** — Rate games 1-5 stars|------|------|-------------||------|-----|-------------|
+
+- 📝 **Reviews** — Write reviews for games
+
+- 💾 **Save Games** — Add games to your library| 🏠 **Home** | `index.html` | Browse games, search & filter || 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
+
+- 📱 **Responsive** — Works on mobile & desktop
 
 | 🎮 **My Games** | `mygames.html` | Your saved games & reviews || 🎮 **My Games** | `mygames.html` | Personal library, wishlist, played games & reviews |
 
+---
+
 | ℹ️ **About** | `about.html` | About the project || ℹ️ **About** | `about.html` | About GameShelf, our mission & team |
+
+## 📂 Project Structure
 
 | 📬 **Contact** | `contact.html` | Contact us || 📬 **Contact** | `contact.html` | Get in touch, feedback & support |
 
+```
 
+GameShelf/
 
-------
+├── index.html          ← Home page
 
+├── mygames.html        ← My Games page------
 
+├── about.html          ← About page
 
-## ✨ Features## 🎯 Features by Page
+├── contact.html        ← Contact page
 
+├── styles/
 
+│   ├── main.css        ← Global styles & variables## ✨ Features## 🎯 Features by Page
 
-- 🔍 **Search** — Find games from RAWG API### 🏠 Home (`index.html`)
+│   ├── layout.css      ← Grid & responsive design
+
+│   └── components.css  ← Cards, buttons, etc.
+
+├── app.js              ← ALL JavaScript (single file)
+
+└── README.md           ← This file- 🔍 **Search** — Find games from RAWG API### 🏠 Home (`index.html`)
+
+```
 
 - 🎯 **Filter** — Filter by genre- **Hero Section** — Welcome banner with quick search
 
+---
+
 - ⭐ **Ratings** — Rate games 1-5 stars- **Trending Games** — Top rated games this week
+
+## 🛠️ Tech Stack
 
 - 📝 **Reviews** — Write reviews for games- **Browse by Genre** — Action, RPG, Strategy, Adventure, etc.
 
-- 💾 **Save Games** — Add games to your library- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
+| Technology | Purpose |
 
-- 📱 **Responsive** — Works on mobile & desktop- **Advanced Filters** — Filter by rating, release year, sort options
+|------------|---------|- 💾 **Save Games** — Add games to your library- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
 
-- **Search** — Find any game from 500,000+ titles
+| HTML5 | Page structure |
 
----- **Game Cards** — Preview with ratings, genres & quick add to library
-
-- **Pagination** — Navigate through results
-
-## 📂 Project Structure (Simplified)- **Featured Collections** — Curated game lists
-
-
-
-```### 🎮 My Games (`mygames.html`)
-
-GameShelf/- **Dashboard Stats** — Total games, completed, hours played, reviews count
-
-├── index.html          ← Home page- **Game Library** — All games you've added
-
-├── mygames.html        ← My Games page- **Status Tracking** — Playing / Completed / Dropped / Backlog
-
-├── about.html          ← About page- **Wishlist** — Games you want to play
-
-├── contact.html        ← Contact page- **Star Ratings** — Rate games 1-5 stars
-
-├── styles.css          ← ALL styles (single file)- **Your Reviews** — Personal written reviews
-
-├── app.js              ← ALL JavaScript (single file)- **Filter Tabs** — View by status category
-
-└── README.md           ← This file- **Grid/List View** — Toggle display mode
-
-```- **Import/Export** — Backup your collection
-
-
-
----### ℹ️ About (`about.html`)
-
-- **Our Mission** — Why we built GameShelf
-
-## 🛠️ Tech Stack- **Features Overview** — What makes us different
-
-- **How It Works** — Simple 3-step guide
-
-| Technology | Purpose |- **Tech Stack** — Technologies powering the app
-
-|------------|---------|- **Team Section** — Meet the creators
-
-| HTML5 | Page structure |- **Statistics** — Platform numbers & achievements
-
-| CSS3 | Styling |- **FAQ** — Frequently asked questions
+| CSS3 | Styling |- 📱 **Responsive** — Works on mobile & desktop- **Advanced Filters** — Filter by rating, release year, sort options
 
 | JavaScript | Interactivity |
 
-| RAWG API | Game data |### 📬 Contact (`contact.html`)
+| RAWG API | Game data |- **Search** — Find any game from 500,000+ titles
+
+| localStorage | Save user data |
+
+---- **Game Cards** — Preview with ratings, genres & quick add to library
+
+---
+
+- **Pagination** — Navigate through results
+
+## 👥 Team & Task Division
+
+## 📂 Project Structure (Simplified)- **Featured Collections** — Curated game lists
+
+### 👤 Person A — Designer (HTML & CSS)
+
+
+
+**Creates all 4 HTML pages and the CSS files.**
+
+```### 🎮 My Games (`mygames.html`)
+
+| Task | File |
+
+|------|------|GameShelf/- **Dashboard Stats** — Total games, completed, hours played, reviews count
+
+| 1 | `index.html` — Home page with search, filters, game cards |
+
+| 2 | `mygames.html` — Library, stats, reviews |├── index.html          ← Home page- **Game Library** — All games you've added
+
+| 3 | `about.html` — About the project |
+
+| 4 | `contact.html` — Contact page |├── mygames.html        ← My Games page- **Status Tracking** — Playing / Completed / Dropped / Backlog
+
+| 5 | `styles/` — All CSS styling |
+
+├── about.html          ← About page- **Wishlist** — Games you want to play
+
+**HTML Element IDs for JavaScript:**
+
+├── contact.html        ← Contact page- **Star Ratings** — Rate games 1-5 stars
+
+```html
+
+<!-- index.html -->├── styles.css          ← ALL styles (single file)- **Your Reviews** — Personal written reviews
+
+#searchInput     — Search input field
+
+#genreFilter     — Genre dropdown├── app.js              ← ALL JavaScript (single file)- **Filter Tabs** — View by status category
+
+#gamesContainer  — Where game cards appear
+
+#loading         — Loading indicator└── README.md           ← This file- **Grid/List View** — Toggle display mode
+
+
+
+<!-- mygames.html -->```- **Import/Export** — Backup your collection
+
+#libraryContainer  — Saved games
+
+#reviewsContainer  — User reviews
+
+#totalGames        — Stat counter
+
+#ratedGames        — Stat counter---### ℹ️ About (`about.html`)
+
+#totalReviews      — Stat counter
+
+```- **Our Mission** — Why we built GameShelf
+
+
+
+---## 🛠️ Tech Stack- **Features Overview** — What makes us different
+
+
+
+### 👤 Person B — Developer (JavaScript)- **How It Works** — Simple 3-step guide
+
+
+
+**Creates single `app.js` file with all functionality.**| Technology | Purpose |- **Tech Stack** — Technologies powering the app
+
+
+
+| Function | Purpose ||------------|---------|- **Team Section** — Meet the creators
+
+|----------|---------|
+
+| `searchGames()` | Fetch games from RAWG API || HTML5 | Page structure |- **Statistics** — Platform numbers & achievements
+
+| `displayGames()` | Show game cards on page |
+
+| `filterByGenre()` | Filter games by genre || CSS3 | Styling |- **FAQ** — Frequently asked questions
+
+| `saveGame()` | Save game to localStorage |
+
+| `loadLibrary()` | Load saved games || JavaScript | Interactivity |
+
+| `rateGame()` | Add star rating (1-5) |
+
+| `saveReview()` | Save text review || RAWG API | Game data |### 📬 Contact (`contact.html`)
+
+| `displayReviews()` | Show all reviews |
 
 | localStorage | Save user data |- **Email Link** — Opens user's email client to send message
 
+---
+
 - **Contact Email** — Ayubackup07@gmail.com
+
+## 🔑 API Setup
 
 ---- **Social Links** — GitHub, Twitter, Discord
 
+Using [RAWG API](https://rawg.io/apidocs) for game data.
+
 - **FAQ Link** — Common questions
 
-## 👥 Team & Task Division- **Response Time** — Expected reply timeframe
+```javascript
+
+const API_KEY = "your-api-key-here";## 👥 Team & Task Division- **Response Time** — Expected reply timeframe
+
+const API_URL = "https://api.rawg.io/api";
+
+```
 
 
 
-### 👤 Person A — Designer (HTML & CSS)---
+---### 👤 Person A — Designer (HTML & CSS)---
 
 
 
-**Creates all 4 HTML pages and the single CSS file.**## 🛠️ Tech Stack
+## 📅 7-Day Timeline
 
 
 
-| Task | File | Description || Technology | Purpose |
+| Day | Person A (Designer) | Person B (Developer) |**Creates all 4 HTML pages and the single CSS file.**## 🛠️ Tech Stack
 
-|------|------|-------------||------------|---------|
+|-----|---------------------|----------------------|
 
-| 1 | `index.html` | Home page structure (search bar, filter dropdown, game cards container) || **HTML5** | Page structure & semantics |
+| 1 | Set up HTML structure | Get API key, test API |
 
-| 2 | `mygames.html` | My Games page (stats, library cards, reviews section) || **CSS3** | Styling, animations & responsive design |
+| 2 | Build index.html | searchGames(), displayGames() |
 
-| 3 | `about.html` | About page (mission, features, team info) || **TypeScript** | Interactivity & API communication |
+| 3 | Build mygames.html | filterByGenre() || Task | File | Description || Technology | Purpose |
 
-| 4 | `contact.html` | Contact page (email link, social links) || **RAWG API** | Game data (500,000+ games) |
+| 4 | Style game cards | saveGame(), loadLibrary() |
 
-| 5 | `styles.css` | All CSS styling for all pages || **localStorage** | Persist user data locally |
+| 5 | Style stats & reviews | rateGame(), saveReview() ||------|------|-------------||------------|---------|
+
+| 6 | Responsive design | displayReviews(), testing |
+
+| 7 | Final polish | Integration & fixes || 1 | `index.html` | Home page structure (search bar, filter dropdown, game cards container) || **HTML5** | Page structure & semantics |
 
 
 
-**HTML Elements Person A Creates:**---
+---| 2 | `mygames.html` | My Games page (stats, library cards, reviews section) || **CSS3** | Styling, animations & responsive design |
 
 
 
-```html## 📂 Project Structure
+## 🚀 Quick Start| 3 | `about.html` | About page (mission, features, team info) || **TypeScript** | Interactivity & API communication |
 
-<!-- index.html needs: -->
+
+
+1. Clone the repo| 4 | `contact.html` | Contact page (email link, social links) || **RAWG API** | Game data (500,000+ games) |
+
+2. Open `index.html` in browser
+
+3. That's it! No build tools needed.| 5 | `styles.css` | All CSS styling for all pages || **localStorage** | Persist user data locally |
+
+
+
+---
+
+
+
+## 📬 Contact**HTML Elements Person A Creates:**---
+
+
+
+**Email:** Ayubackup07@gmail.com
+
+
+
+---```html## 📂 Project Structure
+
+
+
+Made with ❤️ for Web Engineering 1<!-- index.html needs: -->
+
 
 - Navigation bar (links to all pages)```
 
