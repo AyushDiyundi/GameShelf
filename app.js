@@ -494,7 +494,3 @@ function showLoading(show) {
         loading.style.display = show ? "block" : "none";
     }
 }
-
-// ============================================
-// 🎉 That's all! Simple and beginner-friendly!
-// ============================================
