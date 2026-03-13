@@ -1,33 +1,32 @@
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-sm);
-    background: var(--bg-card);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--space-sm);
+	background: var(--bg-card);
 }
 
 /* Nav */
 nav ul {
-    display: flex;
-    gap: var(--space-sm);
-    list-style: none;
+	display: flex;
+	gap: var(--space-sm);
+	list-style: none;
 }
 
 nav a {
-    color: var(--text);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+	color: var(--text);
+	padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-    color: var(--accent);
+	color: var(--accent);
 }
 
 /* Hero */
 .hero {
     text-align: center;
-    padding: var(--space-sm) 0;
+    padding: var(--space-md) 0;
 }
 
 .hero h2 {
@@ -44,23 +43,19 @@ nav a:hover {
 .hero form {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: var(--space-sm);
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: var(--space-md);
+    margin: var(--space-sm) auto 0;
 }
 
-/* Game Grid */
-.game-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-}
-
-.game-card {
-    flex: 1 1 250px;
-    max-width: 300px;
+/* All grid layouts */
+.game-grid,
+.stats-grid,
+.features-grid,
+.steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: var(--space-sm);
 }
 
 /* Filters */
@@ -71,28 +66,49 @@ nav a:hover {
     align-items: center;
 }
 
-.filters select {
-    flex: 1 1 150px;
+.filters select,
+.filters button {
+    flex: 0 0 auto;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+	display: flex;
+	gap: var(--space-sm);
+	flex-wrap: wrap;
 }
 
 /* Pagination */
 .pagination {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-sm);
-    padding: var(--space-md) 0;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	gap: var(--space-sm);
+	padding: var(--space-md) 0;
+	align-items: center;
+}
+
+/* Contact Layout */
+.contact-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: var(--space-md);
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: var(--space-sm);
-    }
+	header {
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
 
-    .game-card {
-        flex: 1 1 100%;
-        max-width: none;
-    }
+	.game-grid,
+	.stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.contact-container,
+	.features-grid,
+	.steps {
+		grid-template-columns: 1fr;
+	}
 }
