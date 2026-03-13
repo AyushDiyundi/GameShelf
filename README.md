@@ -1,4 +1,4 @@
-# 🎮 GameShelf# 🎮 GameShelf# 🎮 GameShelf
+# 🎮 GameShelf# 🎮 GameShelf# 🎮 GameShelf# 🎮 GameShelf# 🎮 GameShelf
 
 
 
@@ -6,167 +6,507 @@
 
 
 
-A simple web app where gamers can discover, track, and review their favorite games.  **"Goodreads, but for Games!"****"Goodreads, but for Games!"**
-
-Built with **HTML**, **CSS**, and **JavaScript**.
+A web app where gamers can discover, track, rate, and review their favorite games.**"Goodreads, but for Games!"**
 
 
 
 ---
 
-A simple web app where gamers can discover, track, and review their favorite games.  A modern multi-page web app where gamers can discover, track, review, and organize their game collections.  
 
-## 🌐 Pages
 
-Built with **HTML**, **CSS**, and **JavaScript**.Built with **HTML**, **CSS**, and **TypeScript**.
-
-| Page | File | Description |
-
-|------|------|-------------|
-
-| 🏠 **Home** | `index.html` | Browse games, search & filter |
-
-| 🎮 **My Games** | `mygames.html` | Your saved games & reviews |------
-
-| ℹ️ **About** | `about.html` | About the project |
-
-| 📬 **Contact** | `contact.html` | Contact us |
+## 🌐 Live DemoA web app where gamers can discover, track, rate, and review their favorite games.**"Goodreads, but for Games!"**
 
 
 
----## 🌐 Pages## 🌐 Pages Overview
+🔗 **[gameshelf.vercel.app](https://gameshelf.vercel.app)**
 
 
 
-## ✨ Features
+Or open `index.html` locally in your browser.---
 
 
-
-- 🔍 **Search** — Find games from RAWG API| Page | File | Description || Page | URL | Description |
-
-- 🎯 **Filter** — Filter by genre
-
-- ⭐ **Ratings** — Rate games 1-5 stars|------|------|-------------||------|-----|-------------|
-
-- 📝 **Reviews** — Write reviews for games
-
-- 💾 **Save Games** — Add games to your library| 🏠 **Home** | `index.html` | Browse games, search & filter || 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
-
-- 📱 **Responsive** — Works on mobile & desktop
-
-| 🎮 **My Games** | `mygames.html` | Your saved games & reviews || 🎮 **My Games** | `mygames.html` | Personal library, wishlist, played games & reviews |
 
 ---
 
-| ℹ️ **About** | `about.html` | About the project || ℹ️ **About** | `about.html` | About GameShelf, our mission & team |
 
-## 📂 Project Structure
 
-| 📬 **Contact** | `contact.html` | Contact us || 📬 **Contact** | `contact.html` | Get in touch, feedback & support |
+## ✨ Features## 🌐 Live DemoA simple web app where gamers can discover, track, and review their favorite games.  **"Goodreads, but for Games!"****"Goodreads, but for Games!"**
 
-```
 
-GameShelf/
 
-├── index.html          ← Home page
+### 🏠 Home Page
 
-├── mygames.html        ← My Games page------
+- **Browse Games** — View popular games from the RAWG database
 
-├── about.html          ← About page
+- **Search** — Find any game by typing and pressing EnterOpen `index.html` in your browser to start using GameShelf!Built with **HTML**, **CSS**, and **JavaScript**.
 
-├── contact.html        ← Contact page
+- **Filter by Genre** — Filter games by Action, RPG, Strategy, Puzzle
 
-├── styles/
+- **Add to Library** — Save games to your personal collection
 
-│   ├── main.css        ← Global styles & variables## ✨ Features## 🎯 Features by Page
 
-│   ├── layout.css      ← Grid & responsive design
 
-│   └── components.css  ← Cards, buttons, etc.
+### 🎮 My Games Page---
 
-├── app.js              ← ALL JavaScript (single file)
+- **Your Library** — View all saved games
 
-└── README.md           ← This file- 🔍 **Search** — Find games from RAWG API### 🏠 Home (`index.html`)
+- **Star Ratings** — Rate games from 1-5 stars
 
-```
+- **Write Reviews** — Add personal reviews to any game
 
-- 🎯 **Filter** — Filter by genre- **Hero Section** — Welcome banner with quick search
+- **Stats Dashboard** — See total games, rated games, and reviews count## ✨ Features---
+
+- **Remove Games** — Delete games from your library
+
+
+
+### ℹ️ About Page
+
+- Learn about GameShelf and its mission### 🏠 Home PageA simple web app where gamers can discover, track, and review their favorite games.  A modern multi-page web app where gamers can discover, track, review, and organize their game collections.  
+
+
+
+### 📬 Contact Page- **Browse Games** — View popular games from the RAWG database
+
+- Get in touch via email or GitHub
+
+- **Search** — Find any game by typing and pressing Enter## 🌐 Pages
 
 ---
 
-- ⭐ **Ratings** — Rate games 1-5 stars- **Trending Games** — Top rated games this week
+- **Filter by Genre** — Filter games by Action, RPG, Strategy, Puzzle
 
 ## 🛠️ Tech Stack
 
-- 📝 **Reviews** — Write reviews for games- **Browse by Genre** — Action, RPG, Strategy, Adventure, etc.
+- **Add to Library** — Save games to your personal collectionBuilt with **HTML**, **CSS**, and **JavaScript**.Built with **HTML**, **CSS**, and **TypeScript**.
 
 | Technology | Purpose |
 
-|------------|---------|- 💾 **Save Games** — Add games to your library- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
+|------------|---------|
 
-| HTML5 | Page structure |
+| **HTML5** | Page structure |
+
+| **CSS3** | Styling & responsive design |### 🎮 My Games Page| Page | File | Description |
+
+| **JavaScript** | Interactivity & logic |
+
+| **RAWG API** | Game data (500,000+ games) |- **Your Library** — View all saved games
+
+| **localStorage** | Save user data locally |
+
+- **Star Ratings** — Rate games from 1-5 stars|------|------|-------------|
+
+---
+
+- **Write Reviews** — Add personal reviews to any game
+
+## 📂 Project Structure
+
+- **Stats Dashboard** — See total games, rated games, and reviews count| 🏠 **Home** | `index.html` | Browse games, search & filter |
+
+```
+
+GameShelf/- **Remove Games** — Delete games from your library
+
+├── index.html              ← Home page (browse & search games)
+
+├── mygames.html            ← My Games (library & reviews)| 🎮 **My Games** | `mygames.html` | Your saved games & reviews |------
+
+├── about.html              ← About page
+
+├── contact.html            ← Contact page### ℹ️ About Page
+
+│
+
+├── js/- Learn about GameShelf and its mission| ℹ️ **About** | `about.html` | About the project |
+
+│   ├── api.js              ← API functions (fetch games from RAWG)
+
+│   ├── storage.js          ← localStorage functions (save/load data)
+
+│   └── app.js              ← Main app (display & event handlers)
+
+│### 📬 Contact Page| 📬 **Contact** | `contact.html` | Contact us |
+
+├── styles/
+
+│   ├── main.css            ← Global styles & CSS variables- Get in touch via email or GitHub
+
+│   ├── layout.css          ← Grid & responsive layout
+
+│   └── components.css      ← Cards, buttons, modals
+
+│
+
+└── README.md               ← This file---
+
+```
+
+---## 🌐 Pages## 🌐 Pages Overview
+
+---
+
+## 🛠️ Tech Stack
+
+## 📁 JavaScript Files Explained
+
+
+
+### `js/api.js`
+
+Handles all communication with the RAWG API.| Technology | Purpose |
+
+
+
+| Function | Description ||------------|---------|## ✨ Features
+
+|----------|-------------|
+
+| `searchGames(query)` | Search games by name || **HTML5** | Page structure |
+
+| `getPopularGames()` | Get top-rated games |
+
+| `filterByGenre(genre)` | Filter games by genre || **CSS3** | Styling & responsive design |
+
+
+
+### `js/storage.js`| **JavaScript** | Interactivity & logic |
+
+Handles saving and loading data from localStorage.
+
+| **RAWG API** | Game data (500,000+ games) |- 🔍 **Search** — Find games from RAWG API| Page | File | Description || Page | URL | Description |
+
+| Function | Description |
+
+|----------|-------------|| **localStorage** | Save user data locally |
+
+| `getLibrary()` | Get saved games |
+
+| `saveGame(id, name, image)` | Add game to library |- 🎯 **Filter** — Filter by genre
+
+| `removeGame(gameId)` | Remove game from library |
+
+| `rateGame(gameId, rating)` | Rate a game (1-5 stars) |---
+
+| `getReviews()` | Get all reviews |
+
+| `saveReview(...)` | Save a review |- ⭐ **Ratings** — Rate games 1-5 stars|------|------|-------------||------|-----|-------------|
+
+| `deleteReview(gameId)` | Delete a review |
+
+## 📂 Project Structure
+
+### `js/app.js`
+
+Handles displaying content and user interactions.- 📝 **Reviews** — Write reviews for games
+
+
+
+| Function | Description |```
+
+|----------|-------------|
+
+| `displayGames(games, container)` | Show game cards |GameShelf/- 💾 **Save Games** — Add games to your library| 🏠 **Home** | `index.html` | Browse games, search & filter || 🏠 **Home** | `index.html` | Discover games, browse by genre/platform, search & filter |
+
+| `displayLibrary(container)` | Show saved games |
+
+| `displayReviews(container)` | Show reviews |├── index.html              ← Home page (browse & search games)
+
+| `updateStats()` | Update stats dashboard |
+
+| `openReviewModal(...)` | Open review popup |├── mygames.html            ← My Games (library & reviews)- 📱 **Responsive** — Works on mobile & desktop
+
+| `loadGames()` | Load games on page start |
+
+├── about.html              ← About page
+
+---
+
+├── contact.html            ← Contact page| 🎮 **My Games** | `mygames.html` | Your saved games & reviews || 🎮 **My Games** | `mygames.html` | Personal library, wishlist, played games & reviews |
+
+## 🎨 CSS Files Explained
+
+│
+
+| File | Purpose |
+
+|------|---------|├── js/---
+
+| `main.css` | CSS variables, colors, fonts, global resets |
+
+| `layout.css` | Page layout, grid system, responsive breakpoints |│   ├── api.js              ← API functions (fetch games from RAWG)
+
+| `components.css` | Game cards, buttons, modals, forms, badges |
+
+│   ├── storage.js          ← localStorage functions (save/load data)| ℹ️ **About** | `about.html` | About the project || ℹ️ **About** | `about.html` | About GameShelf, our mission & team |
+
+---
+
+│   └── app.js              ← Main app (display & event handlers)
+
+## 🚀 Getting Started
+
+│## 📂 Project Structure
+
+1. **Clone the repository**
+
+   ```bash├── styles/
+
+   git clone https://github.com/AyushDiyundi/GameShelf.git
+
+   ```│   ├── main.css            ← Global styles & CSS variables| 📬 **Contact** | `contact.html` | Contact us || 📬 **Contact** | `contact.html` | Get in touch, feedback & support |
+
+
+
+2. **Open in browser**│   ├── layout.css          ← Grid & responsive layout
+
+   ```
+
+   Open index.html in your browser│   └── components.css      ← Cards, buttons, modals```
+
+   ```
+
+│
+
+3. **Start exploring!**
+
+   - Search for games└── README.md               ← This fileGameShelf/
+
+   - Add games to your library
+
+   - Rate and review your favorites```
+
+
+
+> 💡 No build tools or server required — just open and use!├── index.html          ← Home page
+
+
+
+------
+
+
+
+## 🔑 API Information├── mygames.html        ← My Games page------
+
+
+
+This project uses the [RAWG Video Games Database API](https://rawg.io/apidocs).## 📁 JavaScript Files Explained
+
+
+
+- **500,000+ games** in the database├── about.html          ← About page
+
+- **Free tier** available
+
+- Data includes: titles, images, ratings, genres, platforms### `js/api.js`
+
+
+
+---Handles all communication with the RAWG API.├── contact.html        ← Contact page
+
+
+
+## 📱 Responsive Design
+
+
+
+GameShelf works on:| Function | Description |├── styles/
+
+- 🖥️ Desktop
+
+- 💻 Laptop|----------|-------------|
+
+- 📱 Tablet
+
+- 📱 Mobile| `searchGames(query)` | Search games by name |│   ├── main.css        ← Global styles & variables## ✨ Features## 🎯 Features by Page
+
+
+
+---| `getPopularGames()` | Get top-rated games |
+
+
+
+## 📬 Contact| `filterByGenre(genre)` | Filter games by genre |│   ├── layout.css      ← Grid & responsive design
+
+
+
+**GitHub:** [github.com/AyushDiyundi](https://github.com/AyushDiyundi)
+
+
+
+---### `js/storage.js`│   └── components.css  ← Cards, buttons, etc.
+
+
+
+Made with ❤️ for Web Engineering 1Handles saving and loading data from localStorage.
+
+
+├── app.js              ← ALL JavaScript (single file)
+
+| Function | Description |
+
+|----------|-------------|└── README.md           ← This file- 🔍 **Search** — Find games from RAWG API### 🏠 Home (`index.html`)
+
+| `getLibrary()` | Get saved games |
+
+| `saveGame(id, name, image)` | Add game to library |```
+
+| `removeGame(gameId)` | Remove game from library |
+
+| `rateGame(gameId, rating)` | Rate a game (1-5 stars) |- 🎯 **Filter** — Filter by genre- **Hero Section** — Welcome banner with quick search
+
+| `getReviews()` | Get all reviews |
+
+| `saveReview(...)` | Save a review |---
+
+| `deleteReview(gameId)` | Delete a review |
+
+- ⭐ **Ratings** — Rate games 1-5 stars- **Trending Games** — Top rated games this week
+
+### `js/app.js`
+
+Handles displaying content and user interactions.## 🛠️ Tech Stack
+
+
+
+| Function | Description |- 📝 **Reviews** — Write reviews for games- **Browse by Genre** — Action, RPG, Strategy, Adventure, etc.
+
+|----------|-------------|
+
+| `displayGames(games, container)` | Show game cards || Technology | Purpose |
+
+| `displayLibrary(container)` | Show saved games |
+
+| `displayReviews(container)` | Show reviews ||------------|---------|- 💾 **Save Games** — Add games to your library- **Browse by Platform** — PC, PlayStation, Xbox, Nintendo, Mobile
+
+| `updateStats()` | Update stats dashboard |
+
+| `openReviewModal(...)` | Open review popup || HTML5 | Page structure |
+
+| `loadGames()` | Load games on page start |
 
 | CSS3 | Styling |- 📱 **Responsive** — Works on mobile & desktop- **Advanced Filters** — Filter by rating, release year, sort options
 
+---
+
 | JavaScript | Interactivity |
+
+## 🎨 CSS Files Explained
 
 | RAWG API | Game data |- **Search** — Find any game from 500,000+ titles
 
-| localStorage | Save user data |
+| File | Purpose |
 
----- **Game Cards** — Preview with ratings, genres & quick add to library
+|------|---------|| localStorage | Save user data |
+
+| `main.css` | CSS variables, colors, fonts, global resets |
+
+| `layout.css` | Page layout, grid system, responsive breakpoints |---- **Game Cards** — Preview with ratings, genres & quick add to library
+
+| `components.css` | Game cards, buttons, modals, forms, badges |
+
+---
 
 ---
 
 - **Pagination** — Navigate through results
 
+## 🚀 Getting Started
+
 ## 👥 Team & Task Division
 
-## 📂 Project Structure (Simplified)- **Featured Collections** — Curated game lists
+1. **Clone the repository**
 
-### 👤 Person A — Designer (HTML & CSS)
+   ```bash## 📂 Project Structure (Simplified)- **Featured Collections** — Curated game lists
+
+   git clone https://github.com/AyushDiyundi/GameShelf.git
+
+   ```### 👤 Person A — Designer (HTML & CSS)
 
 
 
-**Creates all 4 HTML pages and the CSS files.**
+2. **Open in browser**
+
+   ```
+
+   Open index.html in your browser**Creates all 4 HTML pages and the CSS files.**
+
+   ```
 
 ```### 🎮 My Games (`mygames.html`)
 
-| Task | File |
+3. **Start exploring!**
 
-|------|------|GameShelf/- **Dashboard Stats** — Total games, completed, hours played, reviews count
+   - Search for games| Task | File |
 
-| 1 | `index.html` — Home page with search, filters, game cards |
+   - Add games to your library
 
-| 2 | `mygames.html` — Library, stats, reviews |├── index.html          ← Home page- **Game Library** — All games you've added
-
-| 3 | `about.html` — About the project |
-
-| 4 | `contact.html` — Contact page |├── mygames.html        ← My Games page- **Status Tracking** — Playing / Completed / Dropped / Backlog
-
-| 5 | `styles/` — All CSS styling |
-
-├── about.html          ← About page- **Wishlist** — Games you want to play
-
-**HTML Element IDs for JavaScript:**
-
-├── contact.html        ← Contact page- **Star Ratings** — Rate games 1-5 stars
-
-```html
-
-<!-- index.html -->├── styles.css          ← ALL styles (single file)- **Your Reviews** — Personal written reviews
-
-#searchInput     — Search input field
-
-#genreFilter     — Genre dropdown├── app.js              ← ALL JavaScript (single file)- **Filter Tabs** — View by status category
-
-#gamesContainer  — Where game cards appear
-
-#loading         — Loading indicator└── README.md           ← This file- **Grid/List View** — Toggle display mode
+   - Rate and review your favorites|------|------|GameShelf/- **Dashboard Stats** — Total games, completed, hours played, reviews count
 
 
 
-<!-- mygames.html -->```- **Import/Export** — Backup your collection
+> 💡 No build tools or server required — just open and use!| 1 | `index.html` — Home page with search, filters, game cards |
+
+
+
+---| 2 | `mygames.html` — Library, stats, reviews |├── index.html          ← Home page- **Game Library** — All games you've added
+
+
+
+## 🔑 API Information| 3 | `about.html` — About the project |
+
+
+
+This project uses the [RAWG Video Games Database API](https://rawg.io/apidocs).| 4 | `contact.html` — Contact page |├── mygames.html        ← My Games page- **Status Tracking** — Playing / Completed / Dropped / Backlog
+
+
+
+- **500,000+ games** in the database| 5 | `styles/` — All CSS styling |
+
+- **Free tier** available
+
+- Data includes: titles, images, ratings, genres, platforms├── about.html          ← About page- **Wishlist** — Games you want to play
+
+
+
+---**HTML Element IDs for JavaScript:**
+
+
+
+## 📱 Responsive Design├── contact.html        ← Contact page- **Star Ratings** — Rate games 1-5 stars
+
+
+
+GameShelf works on:```html
+
+- 🖥️ Desktop
+
+- 💻 Laptop<!-- index.html -->├── styles.css          ← ALL styles (single file)- **Your Reviews** — Personal written reviews
+
+- 📱 Tablet
+
+- 📱 Mobile#searchInput     — Search input field
+
+
+
+---#genreFilter     — Genre dropdown├── app.js              ← ALL JavaScript (single file)- **Filter Tabs** — View by status category
+
+
+
+## 📬 Contact#gamesContainer  — Where game cards appear
+
+
+
+**GitHub:** [github.com/AyushDiyundi](https://github.com/AyushDiyundi)#loading         — Loading indicator└── README.md           ← This file- **Grid/List View** — Toggle display mode
+
+
+
+---
+
+
+
+Made with ❤️ for Web Engineering 1<!-- mygames.html -->```- **Import/Export** — Backup your collection
+
 
 #libraryContainer  — Saved games
 
