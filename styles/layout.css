@@ -1,0 +1,98 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm);
+    background: var(--bg-card);
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    gap: var(--space-sm);
+    list-style: none;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: var(--space-sm) 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-dim);
+    margin-bottom: var(--space-sm);
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: var(--space-md);
+}
+
+/* Game Grid */
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.game-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+/* Filters */
+.filters form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.filters select {
+    flex: 1 1 150px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) 0;
+    align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .game-card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}

@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GameShelf</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -12,10 +20,10 @@
         <h1>GameShelf 🎮</h1>
         <nav>
             <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="mygames.html"></a>My Games</li>
-                <li><a href="about.html"></a>About</li>
-                <li><a href="contact.html"></a>Contact Us</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mygames.html">My Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +49,7 @@
                     <option value="puzzle">Puzzle</option>
                 </select>
 
-                Platfrom:
+                Platform:
                 <select name="platform">
                     <option value="all">All</option>
                     <option value="pc">PC</option>
@@ -69,59 +77,46 @@
                     <option value="1">1</option>
                 </select>
 
-                Popularity:
-                <select>
-                    <option value="all">All</option>
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-
                 <button type="submit">Apply</button>
             </form>
         </section>
 
-        <section name="trending">
+        <section class="trending">
+            <h2>Trending</h2>
             <div class="game-grid">
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
                     <h3>Game Title</h3>
-                    <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
-                    <p class="genre">Action</p>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
                     <button>Add to Library</button>
                 </article>
-            </div>
 
-            <div class="game-grid">
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
                     <h3>Game Title</h3>
-                    <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
-                    <p class="genre">Action</p>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
                     <button>Add to Library</button>
                 </article>
-            </div>
 
-            <div class="game-grid">
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
                     <h3>Game Title</h3>
-                    <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
-                    <p class="genre">Action</p>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
                     <button>Add to Library</button>
                 </article>
-            </div>
 
-            <div class="game-grid">
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
                     <h3>Game Title</h3>
-                    <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
-                    <p class="genre">Action</p>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
                     <button>Add to Library</button>
                 </article>
-            </div>
 
+            </div>
         </section>
 
         <section class="all-games">
@@ -130,10 +125,35 @@
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
                     <h3>Game Title</h3>
-                    <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
-                    <p class="genre">Action</p>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
                     <button>Add to Library</button>
                 </article>
+
+                <article class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
+                    <h3>Game Title</h3>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
+                    <button>Add to Library</button>
+                </article>
+
+                <article class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
+                    <h3>Game Title</h3>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
+                    <button>Add to Library</button>
+                </article>
+
+                <article class="game-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
+                    <h3>Game Title</h3>
+                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Genre: Action</p>
+                    <button>Add to Library</button>
+                </article>
+
             </div>
         </section>
 
@@ -143,16 +163,6 @@
             <button>Next →</button>
         </div>
     </main>
-
-<footer>
-    <p>2026 GameShelf. All rights reserved.</p>
-    <nav>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</footer>
 </body>
 
 </html>

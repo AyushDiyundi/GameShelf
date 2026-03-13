@@ -1,0 +1,43 @@
+:root {
+  --bg-dark: #0f0f23;
+  --bg-card: #1a1a2e;
+  --accent: #8B5CF6;
+  --text: #E5E5E5;
+  --text-dim: #9CA3AF;
+  
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background: var(--bg-dark);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
