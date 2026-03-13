@@ -32,8 +32,8 @@
         <section class="hero">
             <h2>Welcome to GameShelf.</h2>
             <p>Discover your next favorite game.</p>
-            <form>
-                <input type="text" placeholder="Search game">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search game">
                 <button type="submit">🔍</button>
             </form>
         </section>
@@ -41,8 +41,8 @@
             <h3>Filters</h3>
             <form>
                 Genre:
-                <select name="genre">
-                    <option value="all">All</option>
+                <select name="genre" id="genreFilter">
+                    <option value="">All</option>
                     <option value="action">Action</option>
                     <option value="rpg">RPG</option>
                     <option value="strategy">Strategy</option>
@@ -81,87 +81,17 @@
             </form>
         </section>
 
+        <p id="loading" style="display: none; text-align: center;">Loading games... 🎮</p>
+
         <section class="trending">
             <h2>Trending</h2>
-            <div class="game-grid">
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
+            <div class="game-grid" id="gamesContainer">
+                <!-- Games will be loaded dynamically by app.js -->
             </div>
         </section>
-
-        <section class="all-games">
-            <h2>Browse All Games 🎮</h2>
-            <div class="game-grid">
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
-
-            </div>
-        </section>
-
-        <div class="pagination">
-            <button>← Previous</button>
-            <span>Page 1 of 50</span>
-            <button>Next →</button>
-        </div>
     </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

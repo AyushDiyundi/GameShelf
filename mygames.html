@@ -33,19 +33,15 @@
             <h2>📊 Your Stats</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <p class="stat-number">47</p>
+                    <p class="stat-number" id="totalGames">0</p>
                     <p class="stat-label">Total Games</p>
                 </div>
                 <div class="stat-card">
-                    <p class="stat-number">23</p>
-                    <p class="stat-label">Completed</p>
+                    <p class="stat-number" id="ratedGames">0</p>
+                    <p class="stat-label">Rated</p>
                 </div>
                 <div class="stat-card">
-                    <p class="stat-number">156h</p>
-                    <p class="stat-label">Hours Played</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">12</p>
+                    <p class="stat-number" id="totalReviews">0</p>
                     <p class="stat-label">Reviews</p>
                 </div>
             </div>
@@ -61,22 +57,23 @@
 
         <section class="my-library">
             <h2>My Library 🎮</h2>
-            <div class="game-grid">
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
+            <div class="game-grid" id="libraryContainer">
+                <!-- Games will be loaded dynamically by app.js -->
+            </div>
+        </section>
 
-                <article class="game-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
-                    <h3>Game Title</h3>
-                    <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
-                    <p class="genre">Genre: Action</p>
-                    <button>Add to Library</button>
-                </article>
+        <section class="reviews">
+            <h2>✍️ Your Reviews</h2>
+            <div id="reviewsContainer">
+                <!-- Reviews will be loaded dynamically by app.js -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
 
                 <article class="game-card">
                     <img src="https://via.placeholder.com/300x200" alt="Game title" width="100" height="100">
