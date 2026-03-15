@@ -3,7 +3,6 @@
 .stat-card,
 .feature-card,
 .step,
-.team-member,
 .review-card,
 .contact-form,
 .contact-info,
@@ -99,17 +98,6 @@ label {
 	text-align: center;
 }
 
-.team-photo {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	margin: 0 auto var(--space-sm);
-}
-
-.team-member {
-	text-align: center;
-}
-
 .tech-badge {
 	display: inline-block;
 	background: var(--bg-card);
@@ -137,16 +125,7 @@ details p {
 }
 
 /* Reviews */
-.review-header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: var(--space-sm);
-}
 
-.review-date {
-	color: var(--text-dim);
-	font-size: 0.875rem;
-}
 
 /* Contact Info */
 .contact-method {
@@ -252,11 +231,6 @@ details p {
 }
 
 /* Button variants */
-.btn {
-    display: inline-block;
-    font-size: 1rem;
-}
-
 .btn-primary {
     background: var(--accent);
     color: white;
