@@ -7,7 +7,6 @@
 
     --space-sm: 1rem;
     --space-md: 2rem;
-    --space-lg: 4rem;
 
     --radius: 8px;
 }
@@ -51,7 +50,7 @@ button {
 }
 
 a {
-    color: var(--text-dim);
+    color: var(--text);
     text-decoration: none;
 }
 
